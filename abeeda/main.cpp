@@ -457,7 +457,7 @@ int main(int argc, char *argv[])
         
 		for(int i = 0; i < populationSize; ++i)
         {
-            game->executeGame(swarmAgents[i], predatorAgents[i], NULL, false, safetyDist, predatorVisionAngle, killDelay, confusionMultiplier);
+            game->executeGame(swarmAgents[i], predatorAgents[i], NULL, false, safetyDist, predatorVisionAngle, killDelay, killPred, confusionMultiplier);
             
             // store the swarm agent's corresponding predator agent
             swarmAgents[i]->predator = new tAgent;

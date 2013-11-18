@@ -559,9 +559,8 @@ string tGame::executeGame(tAgent* swarmAgent, tAgent* predatorAgent, FILE *data_
 				if (!preyDead[i])
 				{
 					if(predDists[i] < killRange)
-					{
 						++killTally;   
-					{
+					
 				}
 			}
 
